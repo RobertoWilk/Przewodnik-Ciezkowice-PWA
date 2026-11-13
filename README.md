@@ -1,4 +1,4 @@
-# Przewodnik w formie aplikacji mobilnej „Ciężkowice”
+# Przewodnik turystyczny po miejscowości Ciężkowice w formie aplikacji internetowej
 
 *Autor: Robert Wilk*
 
