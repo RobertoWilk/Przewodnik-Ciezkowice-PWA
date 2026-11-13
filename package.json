@@ -2,7 +2,7 @@
   "name": "ciezkowice-przewodnik",
   "version": "0.1.0",
   "private": true,
-  "description": "Przewodnik w formie aplikacji mobilnej Ciężkowice — PWA full-stack.",
+  "description": "Przewodnik turystyczny po miejscowości Ciężkowice w formie aplikacji internetowej — PWA full-stack.",
   "workspaces": [
     "apps/client",
     "apps/server"
@@ -25,5 +25,8 @@
   },
   "engines": {
     "node": ">=22.5.0"
+  },
+  "dependencies": {
+    "react-text-to-speech": "^5.1.10"
   }
 }
