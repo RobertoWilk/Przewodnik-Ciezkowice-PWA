@@ -1,0 +1,29 @@
+{
+  "name": "ciezkowice-przewodnik",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Przewodnik w formie aplikacji mobilnej Ciężkowice — PWA full-stack.",
+  "workspaces": [
+    "apps/client",
+    "apps/server"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev --workspace apps/server\" \"npm run dev --workspace apps/client\"",
+    "dev:client": "npm run dev --workspace apps/client",
+    "dev:server": "npm run dev --workspace apps/server",
+    "build": "npm run build --workspace apps/client && npm run build --workspace apps/server",
+    "start": "npm run start --workspace apps/server",
+    "seed": "npm run seed --workspace apps/server",
+    "check": "npm run typecheck --workspace apps/client && npm run typecheck --workspace apps/server",
+    "test:smoke": "node scripts/smoke-test.mjs",
+    "test:security": "node scripts/security-test.mjs",
+    "admin:reset-password": "node scripts/reset-admin-password.mjs"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "zustand": "^5.0.14"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Przewodnik Ciężkowice",
+  "short_name": "Ciężkowice",
+  "description": "Responsywny przewodnik turystyczny po Ciężkowicach.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f7f5ee",
+  "theme_color": "#1b4332",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
